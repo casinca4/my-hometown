@@ -16,6 +16,11 @@ body {
 	width: 100%;
 }
 
+/* ===== NAVBAR ===== */
+.navbar {
+	display: none;
+}
+
 .hamnav {
 	width: 100%;
 	/* background: #000; */
@@ -59,7 +64,8 @@ body {
 	color: black;
 	display: inline-block;
 	font-style: normal;
-	font-size: 1.2em;
+	font-size: 3em;
+	margin-bottom: 30px;
 	padding: 10px;
 }
 
@@ -80,12 +86,9 @@ body {
 	display: block;
 }
 
-/*  NAVBAR */
-.navbar {
-	display: none;
-}
 
-/* IMAGE BERLIN */
+
+/* ===== IMAGE BERLIN ===== */
 
 .image-berlin {
 	position: relative;
@@ -107,7 +110,7 @@ body {
 	transform: translate(-50%, -50%);
 }
 
-/*  HISTORY  */
+/* ===== HISTORY ===== */
 
 .history {
 	/* border: 2px solid blue; */
@@ -138,7 +141,6 @@ body {
 }
 
 .history-info {
-	/* border: 2px solid green; */
 	font-size: 16px;
 	letter-spacing: 0.2em;
 	line-height: 1.8;
@@ -167,7 +169,6 @@ body {
 }
 
 .back-history {
-	/* border: 2px solid yellow; */
 	font-style: italic;
 	margin-top: 40px;
 	text-align: right;
@@ -175,39 +176,29 @@ body {
 
 .back-history p {
 	font-style: italic;
-	/* margin-top: 90px; */
-	/* text-align: right; */
 }
 
-/*  LOCATION  */
+/* ===== LOCATION ===== */
 
 .location {
-	/* border: 2px solid purple; */
 	margin: 0 50px;
-	/* margin-bottom: 100px; */
 }
 
 .location h2 {
 	margin: 70px 0 30px;
 }
 
-.location-map {
-	/* width: 90%; */
-}
-
 .back-location p {
-	/* border: 2px solid yellow; */
 	font-style: italic;
 	font-weight: bold;
 	margin-top: 50px;
 	text-align: right;
 }
 
-/* ========== IMPRESSIONS ============== */
+/* ======== IMPRESSIONS ======= */
 
 .impressions {
 	margin: 0 50px;
-	/* border: 2px solid red; */
 }
 
 .impressions h2 {
@@ -235,7 +226,6 @@ body {
 }
 
 .back-impressions p {
-	/* border: 2px solid yellow; */
 	font-style: italic;
 	font-weight: bold;
 	margin-top: 50px;
@@ -243,7 +233,7 @@ body {
 	text-align: right;
 }
 
-/* ========== SIGHTS ============= */
+/* ======= SIGHTS ======== */
 
 .sights {
 	/* border: 2px solid blue; */
@@ -261,11 +251,7 @@ body {
 }
 
 .column2 {
-	/* width: 23%;
-	box-sizing: border-box;
-	display: inline-block;
-	margin: 4px;
-	padding: 5px; */
+	/* width: 23%; */
 	padding: 0 15px 0 5px;
 }
 
@@ -277,7 +263,6 @@ body {
 }
 
 figcaption {
-	/* margin: 15px 0; */
 	font-size: 22px;
 	font-weight: bold;
 	margin-bottom: 30px;
@@ -286,11 +271,9 @@ figcaption {
 .more-sights {
 	border: 2px solid grey;
 	border-radius: 3px;
-	/* margin: 40px 5px 0; */
 	margin: 25px 0 0;
 	padding: 9px;
 	text-align: center;
-	/* width: 100px; */
 	width: 40%;
 }
 
@@ -299,7 +282,6 @@ figcaption {
 }
 
 .back-sights {
-	/* border: 2px solid yellow; */
 	font-style: italic;
 	font-weight: bold;
 	margin-top: 40px;
@@ -326,7 +308,13 @@ footer img {
 	margin-left: 20px;
 }
 
-/* ======== MEDIA QUERIES ================== */
+.footer {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+/* =========================== MEDIA QUERIES ============================= */
 
 
 @media only screen and (min-width: 768px) {
@@ -334,7 +322,7 @@ footer img {
 		display: none;
 	}
 
-	/* ============ NAVBAR ===============*/
+	/* ===== NAVBAR =====*/
 	.navbar {
 		display: flex;
 		justify-content: space-evenly;
@@ -377,16 +365,7 @@ footer img {
 		color: black;
 	}
 
-	/* ========= IMAGE BERLIN ====== */
-
-	/* .image-berlin {
-	position: relative;
-	text-align: center;
-}
-
-.image-berlin img {
-	width: 100%;
-} */
+	/* ===== IMAGE BERLIN ===== */
 
 	.image-berlin h1 {
 		color: rgb(8, 8, 8);
@@ -394,10 +373,9 @@ footer img {
 		font-weight: bold;
 	}
 
-	/* ========= HISTORY ======= */
+	/* ===== HISTORY ===== */
 
 	.history {
-		/* border: 2px solid blue; */
 		margin: 0 25px;
 	}
 
@@ -407,7 +385,6 @@ footer img {
 	}
 
 	.history-info {
-		/* border: 2px solid green; */
 		font-size: 23px;
 		margin: 65px 28px;
 	}
@@ -421,7 +398,6 @@ footer img {
 	}
 
 	.back-history {
-		/* border: 2px solid yellow; */
 		margin-top: 30px;
 	}
 
@@ -430,7 +406,7 @@ footer img {
 		letter-spacing: normal;
 	}
 
-	/* ========== LOCATION ============== */
+	/* ===== LOCATION ===== */
 
 	.location h2 {
 		font-size: 35px;
@@ -438,15 +414,13 @@ footer img {
 	}
 
 	.back-location p {
-		/* border: 2px solid yellow; */
 		font-size: 25px;
 	}
 
-	/* ========== IMPRESSIONS ============== */
+	/* ===== IMPRESSIONS ===== */
 
 	.impressions {
 		margin: 0 50px;
-		/* border: 2px solid red; */
 	}
 
 	.impressions h2 {
@@ -459,11 +433,10 @@ footer img {
 	}
 
 	.back-impressions p {
-		/* border: 2px solid yellow; */
 		font-size: 25px;
 	}
 
-	/* ========== SIGHTS ============= */
+	/* ===== SIGHTS ===== */
 
 	.sights h2 {
 		font-size: 35px;
@@ -473,13 +446,10 @@ footer img {
 	.column2 img {
 		height: 350px;
 		width: 100%;
-		/* border-radius: 18px; */
 	}
 
 	figcaption {
-		/* margin: 15px 0; */
 		font-size: 30px;
-		/* font-weight: bold; */
 		margin-bottom: 50px;
 	}
 
@@ -494,32 +464,24 @@ footer img {
 	}
 
 	.back-sights p {
-		/* border: 2px solid yellow; */
 		font-size: 25px;
-		/* letter-spacing: normal; */
 	}
 
-	/* ======== FOOTER ========== */
-
-	footer {
-		display: flex;
-		align-items: center;
-	}
+	/* ===== FOOTER ===== */
 
 	footer p {
 		font-size: 23px;
 		margin-left: 120px;
 	}
 
-
 	footer img {
-		margin-left: 45px;
+		margin-left: 100px;
 	}
 }
 
 @media only screen and (min-width: 992px) {
 
-	/* HISTORY */
+	/* ===== HISTORY ===== */
 
 	.history-info p {
 		margin: 0 30px;
@@ -529,7 +491,7 @@ footer img {
 		margin: 40px 30px;
 	}
 
-	/* LOCATION */
+	/* ===== LOCATION ===== */
 
 	.location-map {
 		margin: 0 30px;
@@ -540,7 +502,7 @@ footer img {
 	}
 
 
-	/* IMPRESSIONS */
+	/* ===== IMPRESSIONS ===== */
 
 	.impressions-row {
 		display: flex;
@@ -561,14 +523,12 @@ footer img {
 	}
 
 	.back-impressions p {
-		/* font-style: italic; */
 		margin-right: 20px;
 	}
 
-	/* SIGHTS */
+	/* ===== SIGHTS ===== */
 
 	.sights-row {
-		/* border: 2px solid blue; */
 		display: flex;
 		height: 180px;
 		margin: 20px 0 50px;
@@ -583,7 +543,6 @@ footer img {
 	.column2 img {
 		height: 150px;
 		padding: 5px;
-		/* box-sizing: content-box; */
 	}
 
 	figcaption {
@@ -612,7 +571,6 @@ footer img {
 	footer p {
 		font-size: 30px;
 		margin: 30px 0;
-		margin-left: 150px;
 	}
 
 	@media only screen and (min-width: 1200px) {
@@ -627,10 +585,9 @@ footer img {
 			letter-spacing: 2em;
 		}
 
-		/* HISTORY */
+		/* ===== HISTORY ===== */
 
 		.history {
-			/* border: 2px solid blue; */
 			display: flex;
 			margin: 0 50px;
 		}
@@ -645,7 +602,6 @@ footer img {
 		}
 
 		.history-info {
-			/* border: 2px solid green; */
 			flex: 1;
 			margin-left: 50px;
 		}
@@ -670,16 +626,14 @@ footer img {
 		}
 
 		.back-history {
-			/* border: 2px solid yellow; */
 			flex: 1;
-			/* margin-top: 90px; */
 		}
 
 		.back-history p {
 			font-size: 18px;
 		}
 
-		/* LOCATION */
+		/* ===== LOCATION ===== */
 
 		.location h2 {
 			margin: 70px 0 30px;
@@ -689,8 +643,7 @@ footer img {
 			font-size: 18px;
 		}
 
-		/* IMPRESSIONS */
-
+		/* ===== IMPRESSIONS ===== */
 
 		.impressions h2 {
 			font-size: 30px;
@@ -705,8 +658,8 @@ footer img {
 			font-size: 18px;
 		}
 
-		/* SIGHTS */
 
+		/* ===== SIGHTS ===== */
 
 		.sights h2 {
 			font-size:  30px;
@@ -731,7 +684,6 @@ footer img {
 		}
 
 		.back-sights {
-			/* border: 2px solid yellow; */
 			margin-right: 15px;
 		}
 		
@@ -739,12 +691,7 @@ footer img {
 			font-size: 18px;
 		}
 
-		/* FOOTER */
-
-		footer p {
-			margin: 50px 0;
-			margin-left: 250px;
-		}
+		/* ===== FOOTER ===== */
 
 		footer img {
 			margin-left: 60px;
